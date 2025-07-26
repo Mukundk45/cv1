@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Builder - Create Your Professional Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-file-alt"></i> Professional CV Builder</h1>
+            <p>Create a stunning resume in minutes. Perfect for job applications and career advancement.</p>
+        </header>
+        
+        <div class="main-content">
+            <!-- Left Column: CV Form -->
+            <div class="form-container">
+                <h2><i class="fas fa-edit"></i> Build Your CV</h2>
+                
+                <!-- Personal Information -->
+                <div class="form-section">
+                    <div class="section-title">
+                        <h3><i class="fas fa-user"></i> Personal Information</h3>
+                        <button class="add-btn">+</button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="jobTitle">Professional Title</label>
+                        <input type="text" id="jobTitle" class="form-control" placeholder="Software Engineer">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+91 **********">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" class="form-control" placeholder="Full Address, City, Country">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="summary">Professional Summary</label>
+                        <textarea id="summary" class="form-control" placeholder="About You with experience time..."></textarea>
+                    </div>
+                </div>
+                
+                <!-- Photo Upload -->
+                <div class="form-section">
+                    <h3><i class="fas fa-camera"></i> Profile Photo</h3>
+                    
+                    <div class="file-upload">
+                        <label class="file-upload-label">
+                            <i class="fas fa-cloud-upload-alt"></i> Click to upload your photo
+                            <input type="file" id="photoUpload" accept="image/*">
+                        </label>
+                        <div class="file-name" id="photoFileName">No file selected</div>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div class="form-section">
+                    <div class="section-title">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <button class="add-btn">+</button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="university">University/School</label>
+                        <input type="text" id="university" class="form-control" placeholder="University of Technology">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="degree">Degree</label>
+                            <input type="text" id="degree" class="form-control" placeholder="Bachelor of Science">
+                        </div>
+                        <div class="form-group">
+                            <label for="field">Field of Study</label>
+                            <input type="text" id="field" class="form-control" placeholder="Computer Science">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="eduStartDate">Start Date</label>
+                            <input type="month" id="eduStartDate" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="eduEndDate">End Date (or Expected)</label>
+                            <input type="month" id="eduEndDate" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eduDescription">Achievements/Description</label>
+                        <textarea id="eduDescription" class="form-control" placeholder="Relevant coursework, honors, GPA..."></textarea>
+                    </div>
+                </div>
+                
+                <!-- Work Experience -->
+                <div class="form-section">
+                    <div class="section-title">
+                        <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                        <button class="add-btn">+</button>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="jobTitleInput">Job Title</label>
+                            <input type="text" id="jobTitleInput" class="form-control" placeholder="Software Developer">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" class="form-control" placeholder="Tech Solutions Inc.">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="jobStartDate">Start Date</label>
+                            <input type="month" id="jobStartDate" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="jobEndDate">End Date</label>
+                            <input type="month" id="jobEndDate" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="jobDescription">Responsibilities & Achievements</label>
+                        <textarea id="jobDescription" class="form-control" placeholder="Describe your responsibilities and achievements..."></textarea>
+                    </div>
+                </div>
+                
+                <!-- Skills -->
+                <div class="form-section">
+                    <div class="section-title">
+                        <h3><i class="fas fa-code"></i> Skills</h3>
+                        <button class="add-btn">+</button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="skills">List Your Skills (comma separated)</label>
+                        <textarea id="skills" class="form-control" placeholder="JavaScript, React, Node.js, Python, Project Management..."></textarea>
+                    </div>
+                </div>
+                
+                <!-- Certificates -->
+                <div class="form-section">
+                    <div class="section-title">
+                        <h3><i class="fas fa-certificate"></i> Certificates</h3>
+                        <button class="add-btn">+</button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="certificateName">Certificate Name</label>
+                        <input type="text" id="certificateName" class="form-control" placeholder="Certification">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="issuingOrg">Issuing Organization</label>
+                        <input type="text" id="issuingOrg" class="form-control" placeholder="Glucian">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="issueDate">Issue Date</label>
+                            <input type="month" id="issueDate" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="certificateId">Credential ID (Optional)</label>
+                            <input type="text" id="certificateId" class="form-control" placeholder="Training code">
+                        </div>
+                    </div>
+                    
+                    <div class="file-upload">
+                        <label class="file-upload-label">
+                            <i class="fas fa-cloud-upload-alt"></i> Upload Certificate (PDF/Image)
+                            <input type="file" id="certificateUpload" accept=".pdf,.jpg,.jpeg,.png">
+                        </label>
+                        <div class="file-name" id="certificateFileName">No file selected</div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-block" id="generateBtn">
+                    <i class="fas fa-file-download"></i> Generate CV
+                </button>
+            </div>
+            
+            <!-- Right Column: CV Preview -->
+            <div class="preview-container">
+                <div class="preview-header">
+                    <div class="photo-container">
+                        <div class="photo-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <h2 id="previewName">Your Name</h2>
+                    <p id="previewTitle">Professional Title</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span id="previewEmail">email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span id="previewPhone">(123) 456-7890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="previewAddress">City, Country</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="preview-content">
+                    <div class="preview-section">
+                        <h3><i class="fas fa-user"></i> Summary</h3>
+                        <p id="previewSummary">Passionate professional with expertise in... This section will display your professional summary.</p>
+                    </div>
+                    
+                    <div class="preview-section">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="preview-item">
+                            <h4 id="previewDegree">Degree Name</h4>
+                            <div class="date" id="previewEduDate">Start - End Date</div>
+                            <p id="previewUniversity">University Name</p>
+                            <p id="previewEduDesc">Description of your education</p>
+                        </div>
+                    </div>
+                    
+                    <div class="preview-section">
+                        <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                        <div class="preview-item">
+                            <h4 id="previewJobTitle">Job Title</h4>
+                            <div class="date" id="previewJobDate">Start - End Date</div>
+                            <p id="previewCompany">Company Name</p>
+                            <p id="previewJobDesc">Description of your responsibilities and achievements</p>
+                        </div>
+                    </div>
+                    
+                    <div class="preview-section">
+                        <h3><i class="fas fa-code"></i> Skills</h3>
+                        <div class="skills-list" id="previewSkills">
+                            <div class="skill-tag">Skill 1</div>
+                            <div class="skill-tag">Skill 2</div>
+                            <div class="skill-tag">Skill 3</div>
+                            <div class="skill-tag">Skill 4</div>
+                        </div>
+                    </div>
+                    
+                    <div class="preview-section">
+                        <h3><i class="fas fa-certificate"></i> Certificates</h3>
+                        <div class="certificates-container">
+                            <div class="certificate-item">
+                                <div class="certificate-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="certificate-info">
+                                    <h4 id="previewCertName">Certificate Name</h4>
+                                    <p id="previewCertOrg">Issuing Organization</p>
+                                    <p id="previewCertDate">Issue Date | Credential ID</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-print"></i> Print CV
+                    </button>
+                    <button class="btn btn-light">
+                        <i class="fas fa-download"></i> Download PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2023 Professional CV Builder | Create your perfect resume in minutes</p>
+            <p>All data is processed locally in your browser - your information remains private</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
